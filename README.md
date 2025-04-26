@@ -35,7 +35,3 @@ Aplikasi ini menampilkan pesan ulang tahun yang menarik dan dapat disesuaikan.
 - Ubah teks ucapan ulang tahun di `index.html`.
 - Ganti gambar di folder `assets/` sesuai keinginan.
 - Sesuaikan warna dan gaya di `style.css`.
-
-## 📄 Lisensi
-
-Proyek ini dilisensikan di bawah [MIT License](LICENSE).
