@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ucapan Ulang Tahun</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>  
+    <div class="container" id="form-container">
+        <div class="form-wrapper animate__animated animate__bounceIn">
+            <h1>Ucapan Ulang Tahun</h1>
+            <form id="birthday-form">
+                <div class="form-group">
+                    <label for="name">Masukkin dulu ya namanya dibawah ini 👇</label>
+                    <input type="text" id="name" required placeholder="Masukkan nama kamu">
+                </div>
+                <button type="submit" id="submit-btn">Buat Ucapan!</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="container hidden" id="card-container">
+        <div class="card animate__animated animate__zoomIn">
+            <div class="card-header">
+                <h1>Happy Birthday to You!</h1>
+                <h2 id="birthday-person">Dear [Nama]</h2>
+            </div>
+            <div class="card-content">
+                <div class="cake">
+                    <div class="plate"></div>
+                    <div class="layer layer-bottom"></div>
+                    <div class="layer layer-middle"></div>
+                    <div class="layer layer-top"></div>
+                    <div class="icing"></div>
+                    <div class="candle">
+                        <div class="flame"></div>
+                    </div>
+                    <div class="sparkles">
+                        <div class="sparkle s1"></div>
+                        <div class="sparkle s2"></div>
+                        <div class="sparkle s3"></div>
+                        <div class="sparkle s4"></div>
+                    </div>
+                </div>
+                <p class="message" id="birthday-message">Halo <span id="name-placeholder">[Nama]</span>, semoga di hari spesial ini penuh dengan kebahagiaan, tawa, dan banyak kejutan menyenangkan! Happy for you 😺🎉🎂</p>
+                <div class="balloons">
+                    <div class="balloon b1"></div>
+                    <div class="balloon b2"></div>
+                    <div class="balloon b3"></div>
+                    <div class="balloon b4"></div>
+                </div>
+                <div class="confetti"></div>
+                <button id="play-music-btn">Putar Musik</button>
+                <button id="reset-btn">Buat Lagi</button>
+                <audio id="birthday-music" loop>
+                    <source src="assets/Birthday_song.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
